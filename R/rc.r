@@ -196,8 +196,11 @@ HY      HY        0   17    "Home team yellow cards"
 AY      AY        0   18    "Away team yellow cards"
 HR      HR        0   19    "Home team red cards"
 AR      AR        0   20    "Away team red cards"
-Div     league    1   21    "Division"
-Season  season    1   22    "Season"
+BbAvH   BbAvH     0   21    "Betbrain average home win odds"
+BbAvD   BbAvD     0   22    "Betbrain average draw win odds"
+BbAvA   BbAvA     0   23    "Betbrain average away win odds"
+Div     league    1   24    "Division"
+Season  season    1   25    "Season"
 ', header=TRUE, as.is=TRUE)
 
 #' Conversions
@@ -232,8 +235,11 @@ conv  func
 18    as.integer
 19    as.integer
 20    as.integer
-21    as.factor
-22    as.ordered
+21    as.double
+22    as.double
+23    as.double
+24    as.factor
+25    as.ordered
 ', header=TRUE, as.is=TRUE)
 
 
