@@ -199,8 +199,10 @@ AR      AR        0   20    "Away team red cards"
 BbAvH   BbAvH     0   21    "Betbrain average home win odds"
 BbAvD   BbAvD     0   22    "Betbrain average draw win odds"
 BbAvA   BbAvA     0   23    "Betbrain average away win odds"
-Div     league    1   24    "Division"
-Season  season    1   25    "Season"
+HTR     HTR       0   24    "Half Time Result"
+FTR     FTR       0   25    "Full Time Result"
+Div     league    1   26    "Division"
+Season  season    1   27    "Season"
 ', header=TRUE, as.is=TRUE)
 
 #' Conversions
@@ -238,8 +240,10 @@ conv  func
 21    as.double
 22    as.double
 23    as.double
-24    as.factor
-25    as.ordered
+24    as.character
+25    as.character
+26    as.factor
+27    as.ordered
 ', header=TRUE, as.is=TRUE)
 
 
